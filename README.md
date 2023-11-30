@@ -1,10 +1,8 @@
 # math
 
 [![Current version](https://img.shields.io/packagist/v/velkuns/math.svg?logo=composer)](https://packagist.org/packages/velkuns/math)
-[![Supported PHP version](https://img.shields.io/static/v1?logo=php&label=PHP&message=7.3%20-%208.3&color=777bb4)](https://packagist.org/packages/velkuns/math)
-![CI](https://github.com/eureka-framework/math/workflows/CI/badge.svg)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eureka-framework_eureka-cge&metric=alert_status)](https://sonarcloud.io/dashboard?id=eureka-framework_eureka-cge)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=eureka-framework_eureka-cge&metric=coverage)](https://sonarcloud.io/dashboard?id=eureka-framework_eureka-cge)
+[![Supported PHP version](https://img.shields.io/static/v1?logo=php&label=PHP&message=8.2%20-%208.3&color=777bb4)](https://packagist.org/packages/velkuns/math)
+![CI](https://github.com/velkuns/math/workflows/CI/badge.svg)
 
 ## Why?
 
@@ -70,7 +68,7 @@ make analyze
 
 Minimal supported version:
 ```bash
-make php73compatibility
+make php82compatibility
 ```
 
 Maximal supported version:
