@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0 # To avoid "Shallow clone detected" error in SonarCloud report
 
       #~ PHP Setup
-      - name: Setup PHP (8.2)
+      - name: Setup PHP ${{ matrix.php-versions }}
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
