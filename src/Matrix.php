@@ -23,9 +23,9 @@ class Matrix
     private int $minY;
     private int $maxY;
 
-    public static function fromCoordinates(Point2D $p1, Point2D $p2, mixed $default): self
+    public static function fromCoordinates(Point2D $p1, Point2D $p2, mixed $default): static
     {
-        return new self(
+        return new static(
             array_fill(
                 $p1->getX(),
                 ($p2->getX() - $p1->getX() + 1),
@@ -37,7 +37,7 @@ class Matrix
     /**
      * @param array<int, array<int, mixed>> $matrix
      */
-    public function __construct(array $matrix = [0 => []])
+    final public function __construct(array $matrix = [0 => []])
     {
         $this->matrix = $matrix;
 
@@ -49,7 +49,7 @@ class Matrix
         $this->maxY = (int) max(array_map(fn($line) => empty($line) ? 0 : max(array_keys($line)), $this->matrix));
     }
 
-    public function transpose(): self
+    public function transpose(): static
     {
         $array = [];
         foreach ($this->matrix as $x => $column) {
@@ -58,15 +58,15 @@ class Matrix
             }
         }
 
-        return new self($array);
+        return new static($array);
     }
 
-    public function invert(): self
+    public function invert(): static
     {
         $matrix = $this->matrix;
         krsort($matrix);
 
-        return new self($matrix);
+        return new static($matrix);
     }
 
     public function height(): int
@@ -141,10 +141,10 @@ class Matrix
         return $points;
     }
 
-    public function sliceOnY(int $offset, ?int $length = null): self
+    public function sliceOnY(int $offset, ?int $length = null): static
     {
         $matrix = array_map(fn($line) => array_slice($line, $offset, $length, true), $this->matrix);
 
-        return new self($matrix);
+        return new static($matrix);
     }
 }
