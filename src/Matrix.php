@@ -16,7 +16,7 @@ use Velkuns\Math\_2D\Point2D;
 class Matrix
 {
     /** @var array<int, array<int, mixed>> $matrix */
-    private array $matrix;
+    protected array $matrix;
 
     private int $minX;
     private int $maxX;
@@ -61,10 +61,9 @@ class Matrix
         return new static($array);
     }
 
-    public function invert(): static
+    public function invert(bool $preserveKey = true): static
     {
-        $matrix = $this->matrix;
-        krsort($matrix);
+        $matrix = array_reverse($this->matrix, $preserveKey);
 
         return new static($matrix);
     }

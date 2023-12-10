@@ -17,6 +17,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ----
 
+## [1.2.0] - 2023-12-10
+[1.2.0]: https://github.com/velkuns/math/compare/1.1.0...1.2.0
+### Changed
+- `Matrix::reverse()`: now, can reverse without preserving key
+- `Matrix`: property `matrix` is now protected
+
 
 ## [1.1.0] - 2023-12-10
 [1.1.0]: https://github.com/velkuns/math/compare/1.0.0...1.1.0
