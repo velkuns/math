@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ```yaml
 ## [tag] - YYYY-MM-DD
-[tag]: https://github.com/velkuns/math/compare/0.2.0...master
+[tag]: https://github.com/velkuns/math/compare/1.1.0...master
 ### Changed
 - Change 1
 ### Added
@@ -18,8 +18,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ----
 
 
-## [0.2.0] - 2023-12-10
-[0.2.0]: https://github.com/velkuns/math/compare/0.1.0...0.2.0
+## [1.1.0] - 2023-12-10
+[1.1.0]: https://github.com/velkuns/math/compare/1.0.0...1.1.0
 ### Changed
 - Matrix: 
   - Now return static rather that self to allow extension
@@ -27,6 +27,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Add Math class for GCD & LCM calculator
 
-## [0.1.0] - 2023-12-01
+## [1.0.0] - 2023-12-01
 ### Changed
 - Initialize repository
