@@ -13,13 +13,17 @@ namespace Velkuns\Math\_2D;
 
 class Vector2DDir extends Vector2D
 {
-    public static function fromDirection(Direction $direction, int $norm = 1): self
-    {
+    public static function fromDirection(
+        Direction $direction,
+        int $norm = 1,
+        bool $invertX = false,
+        bool $invertY = false,
+    ): self {
         return match ($direction) {
-            Direction::Right => self::right($norm),
-            Direction::Left  => self::left($norm),
-            Direction::Down  => self::down($norm),
-            Direction::Up    => self::up($norm),
+            Direction::Right => self::right($norm, $invertX),
+            Direction::Left  => self::left($norm, $invertX),
+            Direction::Down  => self::down($norm, $invertY),
+            Direction::Up    => self::up($norm, $invertY),
         };
     }
 

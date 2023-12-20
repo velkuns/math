@@ -17,6 +17,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ----
 
+## [1.3.0] - 2023-12-20
+[1.3.0]: https://github.com/velkuns/math/compare/1.1.0...1.2.0
+### Changed
+- `Vector2DDir::fromDirection()`:
+  - Add `$invertX` boolean to allow inverting direction on x-axis 
+  - Add `$invertY` boolean  to allow inverting direction on y-axis
+
+
 ## [1.2.0] - 2023-12-10
 [1.2.0]: https://github.com/velkuns/math/compare/1.1.0...1.2.0
 ### Changed
